@@ -8,8 +8,51 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div>
-      <h1 class="text-red-900 text-5xl bg-amber-500">Hellow word</h1>
+    <div class="grid grid-cols-1 md:grid-cols-[1.5fr_2fr]">
+      <div class="relative bg-[#F4C2C2] flex flex-col md:flex-row items-center p-4 md:p-0">
+          <div class="flex items-center">
+            <img class="object-cover w-[80px] md:w-[110px] ml-5 md:ml-20" src="images/fcLogo.png" alt="faceCard_Logo">
+          </div>
+          <div class="mt-2 md:mt-0">
+            <a href="#" target="_parent">
+              <h1 class="ml-2 text-2xl italic font-bold text-black md:text-4xl font-elegant md:ml-5">
+                Facecard
+              </h1>
+            </a>
+          </div>
+      </div>
+      <div class="bg-[#F4C2C2] flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 font-bold text-white p-3">
+        <a href="" target="_blank" class="flex items-center justify-center h-10 text-center bg-blue-900 w-28 rounded-3xl">Downloads</a>
+        <a href="" target="_blank" class="hidden sm:inline-block">Features</a>
+        <a href="" target="_blank" class="hidden ml-5 sm:inline-block">Services</a>
+        <a href="" target="_blank" class="hidden ml-5 md:inline-block">About Us</a>
+        <a href="" target="_blank" class="hidden ml-5 lg:inline-block">Partnerships</a>
+        <a href="" target="_blank" class="hidden ml-5 xl:inline-block">FAQ</a>
+        <a href="" target="_blank" class="hidden ml-5 xl:inline-block">Feedback</a>
+        <a href="" target="_blank" class="hidden ml-5 xl:inline-block">Contacts</a>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-[700px] p-5 md:p-10">
+      <div class="flex items-center justify-center bg-white">
+        <img class="w-[80%] md:w-[60%] lg:w-[50%] object-cover"
+        src="images/facecard_app.png" alt="facecard_app">
+      </div>
+      <div class="relative grid items-center grid-rows-3 text-center lg:text-left">
+        <div>
+          <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl text-blue-950">
+              Never let your <br><span class="text-[#F4C2C2]">FaceCard</span> decline.
+          </h1>
+        </div>
+        <div>
+          <button class="w-32 h-10 mt-5 font-medium text-white bg-blue-900 sm:w-40 rounded-3xl lg:mt-0">
+            Download Now!
+          </button>
+        </div>
+        <div>
+          <img class="w-3/4 mx-auto md:w-1/2 lg:mx-0" src="images/Download.png" alt="facecard_download_link">
+        </div>
+      </div>
     </div>
   </body>
 </html>
