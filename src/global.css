@@ -1,0 +1,9 @@
+.button-hover:hover {
+    background-color: white;
+    color: #2D3B75;
+}
+
+.button-hover-light:hover {
+    background-color: #F4C2C2;
+    color: #2D3B75;
+}
