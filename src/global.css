@@ -8,7 +8,7 @@
     color: #2D3B75;
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 915px) {
     .flex-column-reverse {
         display: flex;
         flex-direction: column-reverse;
@@ -22,5 +22,19 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .portrait-phone-mockup{
+        margin-left: 0;
+        min-width: 350px;
+        width: 0;
+    }
+
+    .square-bottle-responsive {
+        left: 16rem;
+    }
+
+    .circle-bg-responsive {
+        left: 4rem;
     }
   }
