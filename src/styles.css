@@ -19,3 +19,7 @@
 .bg-primary {
     @apply bg-[#F4C2C2]
 }
+
+.text-primary {
+    @apply text-[#DF9595]
+}
