@@ -7,3 +7,20 @@
     background-color: #F4C2C2;
     color: #2D3B75;
 }
+
+@media only screen and (max-height: 800px) {
+    .flex-column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-column-reverse > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  }
