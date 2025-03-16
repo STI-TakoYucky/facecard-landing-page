@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     outDir: "dist", // Output folder for production builds
   },
+  base: 'facecard-landing-page', // Set base to the repo name
 })
