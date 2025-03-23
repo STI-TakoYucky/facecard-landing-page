@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@tailwind utilities;
+@plugin "daisyui" {
+    themes: light --default;
+  }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/src/assets/fonts/Nunito.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.bg-accent {
+    @apply bg-[#FFF3E8]
+}
+
+.bg-dark {
+    @apply bg-[#2D3B75]
+}
+
+.bg-primary {
+    @apply bg-[#F4C2C2]
+}
+
+.text-primary {
+    @apply text-[#DF9595]
+}
+
+.bg-secondary {
+    @apply bg-[#2D3B75]
+}
