@@ -26,3 +26,7 @@
 .text-primary {
     @apply text-[#DF9595]
 }
+
+.bg-secondary {
+    @apply bg-[#2D3B75]
+}

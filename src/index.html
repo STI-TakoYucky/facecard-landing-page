@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -14,9 +14,9 @@
     <title>Vite App</title>
   </head>
 
-  <body class="text-blue-950">
+  <body class="text-blue-950 ">
     <!-- HEADER START -->
-    <nav class="flex bg-[#F4C2C2] py-4 items-center justify-between px-[1rem] lg:px-[6rem] ">
+    <nav class="flex bg-[#F4C2C2] py-2 items-center justify-between px-[1rem] lg:px-[6rem] fixed w-full z-50">
       <div class="relative flex items-center flex-row">
           <div class="flex items-center">
             <img class="object-cover w-[80px]" src="images/fcLogo.png" alt="faceCard_Logo">
@@ -31,19 +31,18 @@
         </div>
 
         <div class="items-center gap-7 hidden lg:flex text-lg font-bold">
-          <a href="" target="_blank" class="">Features</a>
-          <a href="" target="_blank" class="">About Us</a>
-          <a href="" target="_blank" class="">Partnerships</a>
-          <a href="" target="_blank" class="">FAQ</a>
-          <a href="" target="_blank" class="">Feedback</a>
-          <a href="" target="_blank" class="">Contacts</a>
+          <a href="#features-section" class="">Features</a>
+          <a href="#about-us-section" class="">About Us</a>
+          <a href="#partnerships-section" class="">Partnerships</a>
+          <a href="#faq-section" class="">FAQ</a>
+          <a href="#contact-section" class="">Feedback</a>
         </div>
         
     </nav>
     <!-- HEADER END -->
     
     <!-- HERO SECTION START -->
-    <section class="flex flex-col-reverse flex-column-reverse lg:flex-row items-center justify-center relative lg:px-[6rem] mt-[5rem] py-5 overflow-hidden px-3">
+    <section id="hero-section" class="flex flex-col-reverse flex-column-reverse lg:flex-row items-center justify-center relative lg:px-[6rem] pt-[12rem] overflow-hidden px-3">
       
       <div class="relative left-0 top-0 min-w-[500px] justify-center flex lg:block portrait-phone-mockup lg:w-[700px] lg:ml-[3rem] mb-[6rem]">
 
@@ -80,7 +79,7 @@
 
      <!-- FEATURES SECTION START -->
 
-     <section class="px-[3rem] lg:px-[12rem] py-[20rem] flex flex-col gap-[14rem] overflow-hidden">
+     <section id="features-section" class="px-[3rem] lg:px-[12rem] py-[20rem] flex flex-col gap-[14rem] overflow-hidden">
       <div class="flex flex-col lg:flex-row-reverse items-center justify-between">
         <div class="relative">
           <img src="/images/facecard-phone-mockup.png" class="min-w-[18rem] w-[18rem]" data-aos="fade-up">
@@ -128,126 +127,150 @@
 
      <!-- FEATURES SECTION END -->
 
-      <!-- ABOUT US START -->
-  <div class="grid grid-cols-1 bg-[#F4C2C2] h-auto lg:grid-cols-2 p-5 md:p-10">
+  <!-- ABOUT US START -->
+   <section id="about-us-section" class="px-[1rem] lg:px-[6rem] bg-slate-100 text-blue-950">
+  <div class="grid grid-cols-1 h-auto p-5 md:p-10">
     <div class="flex flex-col items-center">
       <div class="p-4 mt-10">
-        <h1 class="text-2xl font-bold text-black md:text-1xl">
-          ABOUT US
+        <h1 class="text-3xl font-bold text-blue-950">
+          About Us
         </h1>
       </div>
-      <div class="flex justify-center p-2 my-6">
+      <div class="flex justify-center p-2 my-6 bg-white rounded-full">
         <img class="w-[100px] md:w-[140px] lg:w-[160px]"
         src="images/fcLogo.png" alt="logo">
       </div>
       <div class="p-2 mx-5 my-5">
-        <h1 class="text-sm text-justify text-black md:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <h1 class="text-base text-justify text-blue-950 md:text-2xl max-w-[70rem]">
+          FaceCard is a revolutionary skincare platform designed to empower individuals with expert guidance, advanced technology, and personalized solutions for achieving healthy, radiant skin. We believe that skincare should be simple, effective, and accessible to everyone. 
         </h1>
       </div>
     </div>
-    <div class="flex flex-col">
-      <div class="flex flex-col items-center p-4 mt-10 ">
-        <h1 class="text-2xl font-bold text-black md:text-1xl">
-          Who we are
+
+    <!-- MISSION AND VISION START -->
+    <div class="flex justify-self-center lg:justify-self-end mt-10 lg:mr-16 gap-x-10 rounded-2xl md:w-[80%] lg:w-[40%]">
+      <div class="flex flex-col justify-self-end gap-y-4">
+        <h4 class="italic text-3xl font-bold">Our Mission</h4>
+        <h1 class="md:text-xl text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda vero optio quod! Sunt sint velit distinctio recusandae corporis, saepe laborum, nesciunt, minus repudiandae nihil consequatur soluta ut iste placeat delectus.</h1>
+      </div>
+    </div>
+
+    <div class="flex justify-self-center lg:justify-self-start mt-10 lg:ml-16 gap-x-10 rounded-2xl md:w-[80%] lg:w-[40%]">
+      <div class="flex flex-col justify-self-end gap-y-4">
+        <h4 class="italic text-3xl font-bold ">Our Vision</h4>
+        <h1 class="md:text-xl text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda vero optio quod! Sunt sint velit distinctio recusandae corporis, saepe laborum, nesciunt, minus repudiandae nihil consequatur soluta ut iste placeat delectus.</h1>
+      </div>
+    </div>
+  <!-- MISSION AND VISION END -->
+       
+
+    <div class="flex flex-col my-[10rem]">
+      <div class="flex flex-col items-center p-4 my-10 ">
+        <h1 class="text-3xl font-bold">
+          Meet the Team
         </h1>
       </div>
-
-      <div class="flex flex-row h-auto my-5 pad-4 justify-evenly">
+      <div class="flex flex-col lg:flex-row h-auto my-5 pad-4 justify-evenly">
         <div class="flex flex-col items-center p-2">
-          <img class="w-[100px] sm:w-[150px] md:w-[30%] lg:w-[35%]" src="images/profile.png" alt="">
-          <p class="text-center">
-            <strong>Postion 1</strong>
+          <img class="object-cover w-[14rem] min-w-[130px]" src="images/profile.png" alt="Profile image for Member 1">
+          <p class="text-center text-blue-950">
+            <strong>Position 1</strong>
             <br>
             Member 1
           </p>
         </div>
         <div class="flex flex-col items-center p-2">
-          <img class="w-[100px] sm:w-[150px] md:w-[30%] lg:w-[35%]" src="images/profile.png" alt="">
-          <p class="text-center">
+          <img class="object-cover w-[14rem] min-w-[130px]" src="images/profile.png" alt="Profile image for Member 2">
+          <p class="text-center text-blue-950">
             <strong>Position 2</strong>
             <br>
             Member 2
           </p>
         </div>
-    </div>
-
-    <div class="flex flex-row h-auto my-5 pad-4 justify-evenly">
-      <div class="flex flex-col items-center p-2">
-        <img class="w-[100px] sm:w-[150px] md:w-[40%] lg:w-[55%]" src="images/profile.png" alt="">
-        <p class="text-center">
-          <strong>Position 3</strong>
-          <br>
-          Member 3
-        </p>
       </div>
-      <div class="flex flex-col items-center p-2">
-        <img class="w-[100px] sm:w-[150px] md:w-[40%] lg:w-[55%]" src="images/profile.png" alt="">
-        <p class="text-center">
-          <strong>Position 4</strong>
-          <br>
-          Member 4
-        </p>
+      
+      <div class="flex flex-col lg:flex-row h-auto gap-12 my-5 pad-4 justify-evenly">
+        <div class="flex flex-col items-center p-2">
+          <img class="object-cover w-[14rem] min-w-[130px]" src="images/profile.png" alt="Profile image for Member 3">
+          <p class="text-center text-blue-950">
+            <strong>Position 3</strong>
+            <br>
+            Member 3
+          </p>
+        </div>
+        <div class="flex flex-col items-center p-2">
+          <img class="object-cover w-[14rem] min-w-[130px]" src="images/profile.png" alt="Profile image for Member 4">
+          <p class="text-center text-blue-950">
+            <strong>Position 4</strong>
+            <br>
+            Member 4
+          </p>
+        </div>
+        <div class="flex flex-col items-center p-2">
+          <img class="object-cover w-[14rem] min-w-[130px]" src="images/profile.png" alt="Profile image for Member 5">
+          <p class="text-center text-blue-950">
+            <strong>Position 5</strong>
+            <br>
+            Member 5
+          </p>
+        </div>
       </div>
-      <div class="flex flex-col items-center p-2">
-        <img class="w-[100px] sm:w-[150px] md:w-[40%] lg:w-[55%]" src="images/profile.png" alt="">
-        <p class="text-center">
-          <strong>Position 5</strong>
-          <br>
-          Member 5
-        </p>
-      </div>
-    </div>
   </div>
   </div>
+</section>
   <!-- ABOUT US END -->
 
    <!-- PARTNERSHIPS START -->
-   <section class="p-2 md:p-4 lg:p-10">
-    <div class="flex flex-col h-auto">
-      <div class="flex justify-center mt-10 md:mt-5">
-        <h1 class="flex justify-center text-2xl md:text-3xl font-bold text-[#162041]">
+   <section id="partnerships-section" class="px-4 py-[6rem]">
+    <div class="flex flex-col h-auto ">
+      <div class="flex justify-center mt-5 mb-[10rem]">
+        <h1 class="text-3xl font-bold">
           Our Trusted Partners
         </h1>
       </div>
-      <div class="grid grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 g-4 auto-rows-fr">
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/la-roche.png" alt="">
+
+      
+      <div class="grid grid-cols-2 place-items-center gap-5 lg:grid-cols-4">
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/la-roche.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/celeteque.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/ponds.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/cerave.png" alt="">
+          </div>
+
+
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/belo.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/nivea.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]">
+            <img src="images/garnier.png" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[60%] max-w-[12rem] min-w-[130px]"> 
+            <img src="images/eskinol.png" alt="">
+          </div>
         </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/celeteque.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[100px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/ponds.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/cerave.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/belo.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/nivea.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto">
-          <img src="images/garnier.png" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[200px] sm:w-[250px] md:w-[50%] lg:w-[70%] mx-auto"> 
-          <img src="images/eskinol.png" alt="">
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- PARTNERSHIPS END -->
       
   <!-- FQA daisyUi -->
-  <section class="p-2 md:p-4 lg:p-6">
+  <section id="faq-section" class="flex items-center justify-center flex-col py-[10rem]">
     <div class="flex justify-center p-4 my-4">
       <h1 class="text-2xl font-bold md:text-3xl lg:text-4xl">
         Frequently Asked Questions
       </h1>
     </div>
+    <div>
     <div class="border collapse collapse-arrow bg-base-100 border-base-300">
       <input type="radio" name="my-accordion-2" checked="checked" />
       <div class="font-semibold collapse-title">How do I create an account?</div>
@@ -268,23 +291,49 @@
       <div class="font-semibold collapse-title">Is the app free?</div>
       <div class="text-sm collapse-content">The app is free to use for the users but there is a premium membership that grants access to additional services and features.</div>
     </div>
-    </section>
+  </div>
+  </section>
+
+  
+     <!-- CONTACT/FEEDBACK SECTION START -->
+
+     <section id="contact-section" class="flex items-center justify-center pb-[10rem]">
+     <div class="w-full max-w-[53rem] p-6 text-blue-950">
+      <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl text-center">Tell us your thoughts!</h2>
+      <form class="space-y-4">
+          <div>
+              <label class="block font-medium mb-2" for="name">Name</label>
+              <input class="input input-bordered w-full" type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div>
+              <label class="block  font-medium mb-2" for="email">Email</label>
+              <input class="input input-bordered w-full" type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div>
+              <label class="block  font-medium mb-2" for="message">Message</label>
+              <textarea class="textarea textarea-bordered w-full" id="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button class="btn bg-secondary w-full text-white">Submit</button>
+      </form>
+  </div>
+
+</section>
+
+     <!-- CONTACT/FEEDBACK SECTION END -->
 
      <!-- FOOTER SECTION START -->
 
-     <footer class="footer footer-horizontal text-base footer-center bg-primary rounded px-14 !items-start lg:!items-center  py-[6rem] text-blue-950 flex flex-row lg:flex-col">
+     <footer class="footer footer-horizontal text-base footer-center bg-primary rounded px-14 !items-start lg:!items-center  py-[3rem] text-blue-950 flex flex-row lg:flex-col">
       <nav class="flex lg:flex-row flex-col gap-4 !place-items-start">
-        <a href="" target="_blank" class="link link-hover">Features</a>
-        <a href="" target="_blank" class="link link-hover">About Us</a>
-        <a href="" target="_blank" class="link link-hover">Partnerships</a>
-        <a href="" target="_blank" class="link link-hover">FAQ</a>
-        <a href="" target="_blank" class="link link-hover">Feedback</a>
-        <a href="" target="_blank" class="link link-hover">Contacts</a>
-        <a href="" target="_blank" class="link link-hover">Features</a>
+        <a href="#features-section" class="link link-hover">Features</a>
+        <a href="#about-us-section" class="link link-hover">About Us</a>
+        <a href="#partnerships-section" class="link link-hover">Partnerships</a>
+        <a href="#faq-section" class="link link-hover">FAQ</a>
+        <a href="#contact-section" class="link link-hover">Feedback</a>
       </nav>
       <nav class="px-8">
-        <div class="grid grid-flow-col gap-4">
-          <a>
+        <div class="grid grid-flow-row lg:grid-flow-col gap-4">
+          <a class="cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -295,7 +344,7 @@
                 d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
             </svg>
           </a>
-          <a>
+          <a class="cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -306,7 +355,7 @@
                 d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
             </svg>
           </a>
-          <a>
+          <a class="cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -333,7 +382,7 @@
   <script>
     AOS.init({
             duration: 800, // Animation duration in ms
-            delay: 100, // Delay in ms
+            delay: 400, // Delay in ms
             easing: 'ease-in-out', // Animation easing
         });
         
