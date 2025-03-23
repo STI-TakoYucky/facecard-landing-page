@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @tailwind utilities;
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: light --default;
+  }
 
 @font-face {
     font-family: 'Nunito';
@@ -23,4 +25,8 @@
 
 .text-primary {
     @apply text-[#DF9595]
+}
+
+.bg-secondary {
+    @apply bg-[#2D3B75]
 }

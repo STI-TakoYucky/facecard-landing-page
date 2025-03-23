@@ -5,7 +5,7 @@ export default defineConfig({
     tailwindcss(),
   ],root: "./src", // Set your project root (change if needed)
   build: {
-    outDir: "dist", // Output folder for production builds
+    outDir: "../dist", // Output folder for production builds
   },
-  base: '/facecard-landing-page', // Set base to the repo name
+  base: '/facecard-landing-page/', // Set base to the repo name
 })
